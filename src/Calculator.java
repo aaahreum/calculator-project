@@ -40,7 +40,7 @@ public class Calculator {
                     break;
             }
 
-            sc.nextLine();
+            sc.nextLine(); // 버퍼에 남은 개행문자 처리
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
             String stop = sc.nextLine();
             if (stop.equals("exit")) {
