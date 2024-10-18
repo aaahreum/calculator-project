@@ -13,7 +13,7 @@ public class Calculator {
             System.out.print("두 번째 숫자를 입력하세요: ");
             int num2 = sc.nextInt();
 
-            int result = 0;
+            double result = 0.0;
 
             switch (operator) {
                 case '+':
@@ -33,7 +33,7 @@ public class Calculator {
                         System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
                         break; // 반복문 종료
                     }
-                    result = num1 / num2;
+                    result = (double) num1 / num2;
                     System.out.println("결과: " + result);
                     break;
                 default:
